@@ -1,0 +1,988 @@
+{
+  "athletes" : [ {
+    "name" : "Олександр Коваль",
+    "weightKg" : 73.0
+  }, {
+    "name" : "Марія Бондаренко",
+    "weightKg" : 91.0
+  }, {
+    "name" : "Дмитро Шевченко",
+    "weightKg" : 71.0
+  }, {
+    "name" : "Анна Мельник",
+    "weightKg" : 82.0
+  }, {
+    "name" : "Максим Ткаченко",
+    "weightKg" : 63.0
+  }, {
+    "name" : "Ірина Кравченко",
+    "weightKg" : 83.0
+  }, {
+    "name" : "Артем Олійник",
+    "weightKg" : 73.0
+  }, {
+    "name" : "Софія Поліщук",
+    "weightKg" : 61.0
+  } ],
+  "workouts" : [ {
+    "workoutType" : "CARDIO",
+    "id" : "60491c57-d9b7-4fb9-8258-6402d1c87d8e",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-09-21",
+    "durationMinutes" : 62,
+    "intensity" : 3,
+    "exercises" : [ {
+      "title" : "Присідання зі штангою",
+      "sets" : 3,
+      "reps" : 14
+    } ],
+    "distanceKm" : 4.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "34f77718-b536-44b6-9789-10ab9a841abc",
+    "athlete" : {
+      "name" : "Анна Мельник",
+      "weightKg" : 82.0
+    },
+    "date" : "2026-10-14",
+    "durationMinutes" : 88,
+    "intensity" : 10,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 4,
+      "reps" : 14
+    } ],
+    "liftedWeightKg" : 813.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "74d842bf-09c5-4722-b76e-4f43627b48b0",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-10-23",
+    "durationMinutes" : 45,
+    "intensity" : 9,
+    "exercises" : [ {
+      "title" : "Станова тяга",
+      "sets" : 3,
+      "reps" : 8
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "96d7b442-975f-469c-a8c1-e891e6b5a16a",
+    "athlete" : {
+      "name" : "Марія Бондаренко",
+      "weightKg" : 91.0
+    },
+    "date" : "2026-11-08",
+    "durationMinutes" : 102,
+    "intensity" : 8,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 4,
+      "reps" : 11
+    } ],
+    "distanceKm" : 11.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "cd9d1173-72de-48c0-a73e-6ddec9405b25",
+    "athlete" : {
+      "name" : "Артем Олійник",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-10-19",
+    "durationMinutes" : 38,
+    "intensity" : 8,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 3,
+      "reps" : 15
+    } ],
+    "liftedWeightKg" : 2335.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "f1809100-4aa5-42f3-b727-a35d98f7390c",
+    "athlete" : {
+      "name" : "Олександр Коваль",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-10-01",
+    "durationMinutes" : 73,
+    "intensity" : 1,
+    "exercises" : [ {
+      "title" : "Інтервальний біг",
+      "sets" : 4,
+      "reps" : 8
+    } ],
+    "useEquipment" : true
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "5d44e00c-5fab-4717-91e9-63a5a6a2605b",
+    "athlete" : {
+      "name" : "Софія Поліщук",
+      "weightKg" : 61.0
+    },
+    "date" : "2026-10-25",
+    "durationMinutes" : 46,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Присідання зі штангою",
+      "sets" : 5,
+      "reps" : 10
+    } ],
+    "distanceKm" : 3.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "33ac910c-eda1-4e93-9933-e8e981f513ba",
+    "athlete" : {
+      "name" : "Софія Поліщук",
+      "weightKg" : 61.0
+    },
+    "date" : "2026-10-30",
+    "durationMinutes" : 78,
+    "intensity" : 10,
+    "exercises" : [ {
+      "title" : "Випади",
+      "sets" : 3,
+      "reps" : 8
+    } ],
+    "liftedWeightKg" : 401.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "e6a4551e-1dcf-46c5-859e-535620d883ad",
+    "athlete" : {
+      "name" : "Дмитро Шевченко",
+      "weightKg" : 71.0
+    },
+    "date" : "2026-09-25",
+    "durationMinutes" : 58,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 4,
+      "reps" : 13
+    } ],
+    "useEquipment" : true
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "4f3e2b0d-3385-44f9-9864-1b27a9e73a9f",
+    "athlete" : {
+      "name" : "Анна Мельник",
+      "weightKg" : 82.0
+    },
+    "date" : "2026-10-10",
+    "durationMinutes" : 113,
+    "intensity" : 3,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 3,
+      "reps" : 17
+    } ],
+    "distanceKm" : 11.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "fc794e11-45ec-444b-ab2c-25fd859bed51",
+    "athlete" : {
+      "name" : "Анна Мельник",
+      "weightKg" : 82.0
+    },
+    "date" : "2026-10-25",
+    "durationMinutes" : 42,
+    "intensity" : 7,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 3,
+      "reps" : 17
+    } ],
+    "liftedWeightKg" : 2723.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "49f03060-22f5-4ddb-bb3c-699fcfbc9c95",
+    "athlete" : {
+      "name" : "Артем Олійник",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-10-08",
+    "durationMinutes" : 26,
+    "intensity" : 9,
+    "exercises" : [ {
+      "title" : "Інтервальний біг",
+      "sets" : 4,
+      "reps" : 10
+    } ],
+    "useEquipment" : true
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "238bb0b2-007c-44b8-82a7-96646f89061e",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-10-13",
+    "durationMinutes" : 69,
+    "intensity" : 7,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 5,
+      "reps" : 14
+    } ],
+    "distanceKm" : 6.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "6a4f5076-12ef-4d5d-8173-b4f065215a50",
+    "athlete" : {
+      "name" : "Артем Олійник",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-10-13",
+    "durationMinutes" : 56,
+    "intensity" : 1,
+    "exercises" : [ {
+      "title" : "Жим гантелей",
+      "sets" : 4,
+      "reps" : 14
+    } ],
+    "liftedWeightKg" : 1079.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "bc091fac-4ce0-4f5d-b16c-5fdaa0fdd0b9",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-09-26",
+    "durationMinutes" : 53,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Станова тяга",
+      "sets" : 3,
+      "reps" : 10
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "3fc52edd-5d05-41e0-9de8-cba55cc2fa94",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-10-22",
+    "durationMinutes" : 82,
+    "intensity" : 3,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 4,
+      "reps" : 10
+    } ],
+    "distanceKm" : 10.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "f598a421-f3d1-4d9b-9bf0-141b669cd0d5",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-11-11",
+    "durationMinutes" : 92,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 5,
+      "reps" : 9
+    } ],
+    "liftedWeightKg" : 823.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "acbac48c-6fde-4999-90dc-8ddb7678ecd1",
+    "athlete" : {
+      "name" : "Олександр Коваль",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-10-21",
+    "durationMinutes" : 68,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 5,
+      "reps" : 8
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "2ed1d89d-c781-4590-83f5-c24e986c8b98",
+    "athlete" : {
+      "name" : "Софія Поліщук",
+      "weightKg" : 61.0
+    },
+    "date" : "2026-10-29",
+    "durationMinutes" : 111,
+    "intensity" : 10,
+    "exercises" : [ {
+      "title" : "Станова тяга",
+      "sets" : 5,
+      "reps" : 10
+    } ],
+    "distanceKm" : 8.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "fbb90a21-9352-4872-9309-13fd232f671d",
+    "athlete" : {
+      "name" : "Софія Поліщук",
+      "weightKg" : 61.0
+    },
+    "date" : "2026-10-08",
+    "durationMinutes" : 85,
+    "intensity" : 1,
+    "exercises" : [ {
+      "title" : "Жим гантелей",
+      "sets" : 3,
+      "reps" : 8
+    } ],
+    "liftedWeightKg" : 929.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "f4ee00ec-0659-4ebf-ad73-60e8ebcde7a3",
+    "athlete" : {
+      "name" : "Артем Олійник",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-10-13",
+    "durationMinutes" : 59,
+    "intensity" : 5,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 3,
+      "reps" : 14
+    } ],
+    "useEquipment" : true
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "80a72bc4-f124-4035-9aec-27c6b67fa797",
+    "athlete" : {
+      "name" : "Анна Мельник",
+      "weightKg" : 82.0
+    },
+    "date" : "2026-10-08",
+    "durationMinutes" : 49,
+    "intensity" : 3,
+    "exercises" : [ {
+      "title" : "Станова тяга",
+      "sets" : 4,
+      "reps" : 8
+    } ],
+    "distanceKm" : 6.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "30eb73a0-4db8-4711-9368-a318f249bb1d",
+    "athlete" : {
+      "name" : "Олександр Коваль",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-11-08",
+    "durationMinutes" : 46,
+    "intensity" : 6,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 3,
+      "reps" : 16
+    } ],
+    "liftedWeightKg" : 2693.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "554bec2e-71e6-4dba-b592-d37033098cea",
+    "athlete" : {
+      "name" : "Марія Бондаренко",
+      "weightKg" : 91.0
+    },
+    "date" : "2026-09-16",
+    "durationMinutes" : 41,
+    "intensity" : 10,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 5,
+      "reps" : 11
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "d40eb497-f0fe-4e7b-b18e-18120394b89d",
+    "athlete" : {
+      "name" : "Дмитро Шевченко",
+      "weightKg" : 71.0
+    },
+    "date" : "2026-11-05",
+    "durationMinutes" : 93,
+    "intensity" : 9,
+    "exercises" : [ {
+      "title" : "Станова тяга",
+      "sets" : 4,
+      "reps" : 10
+    } ],
+    "distanceKm" : 3.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "f5485da5-5e2f-4f1a-bde5-43ec7a6467b3",
+    "athlete" : {
+      "name" : "Олександр Коваль",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-10-24",
+    "durationMinutes" : 110,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Присідання зі штангою",
+      "sets" : 4,
+      "reps" : 12
+    } ],
+    "liftedWeightKg" : 2705.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "4d3cb261-4efd-4bee-ad25-9cd802e3bcf2",
+    "athlete" : {
+      "name" : "Максим Ткаченко",
+      "weightKg" : 63.0
+    },
+    "date" : "2026-11-02",
+    "durationMinutes" : 28,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 5,
+      "reps" : 9
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "7750c529-464a-47d9-acad-fd670308af5d",
+    "athlete" : {
+      "name" : "Максим Ткаченко",
+      "weightKg" : 63.0
+    },
+    "date" : "2026-09-21",
+    "durationMinutes" : 96,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 4,
+      "reps" : 13
+    } ],
+    "distanceKm" : 9.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "4b5b5723-0a62-4718-b99b-84b036ad7765",
+    "athlete" : {
+      "name" : "Софія Поліщук",
+      "weightKg" : 61.0
+    },
+    "date" : "2026-10-17",
+    "durationMinutes" : 61,
+    "intensity" : 10,
+    "exercises" : [ {
+      "title" : "Випади",
+      "sets" : 3,
+      "reps" : 11
+    } ],
+    "liftedWeightKg" : 690.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "4d61e167-ccf7-4fe1-8a61-fbfc3cf6f1df",
+    "athlete" : {
+      "name" : "Анна Мельник",
+      "weightKg" : 82.0
+    },
+    "date" : "2026-11-07",
+    "durationMinutes" : 71,
+    "intensity" : 1,
+    "exercises" : [ {
+      "title" : "Випади",
+      "sets" : 3,
+      "reps" : 9
+    } ],
+    "useEquipment" : true
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "761da22a-4583-41a1-8ee9-65da004fa589",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-09-19",
+    "durationMinutes" : 103,
+    "intensity" : 6,
+    "exercises" : [ {
+      "title" : "Жим гантелей",
+      "sets" : 3,
+      "reps" : 11
+    } ],
+    "distanceKm" : 2.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "8de7d963-870b-48da-a608-cfee603bcba6",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-10-05",
+    "durationMinutes" : 55,
+    "intensity" : 2,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 3,
+      "reps" : 8
+    } ],
+    "liftedWeightKg" : 716.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "eb331ef0-cef1-408f-ab12-0fa6ef8306b1",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-11-06",
+    "durationMinutes" : 60,
+    "intensity" : 8,
+    "exercises" : [ {
+      "title" : "Інтервальний біг",
+      "sets" : 3,
+      "reps" : 12
+    } ],
+    "useEquipment" : true
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "e0317002-f553-4738-960e-d295da9208b5",
+    "athlete" : {
+      "name" : "Артем Олійник",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-10-13",
+    "durationMinutes" : 20,
+    "intensity" : 10,
+    "exercises" : [ {
+      "title" : "Жим гантелей",
+      "sets" : 4,
+      "reps" : 11
+    } ],
+    "distanceKm" : 9.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "04c4a1ad-d973-45fd-a6d7-c91527c9279c",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-09-15",
+    "durationMinutes" : 47,
+    "intensity" : 8,
+    "exercises" : [ {
+      "title" : "Присідання зі штангою",
+      "sets" : 3,
+      "reps" : 17
+    } ],
+    "liftedWeightKg" : 1188.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "d2ffa8c2-4241-4e0c-b105-40c18b24146a",
+    "athlete" : {
+      "name" : "Софія Поліщук",
+      "weightKg" : 61.0
+    },
+    "date" : "2026-09-24",
+    "durationMinutes" : 60,
+    "intensity" : 9,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 5,
+      "reps" : 15
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "d2c0b07b-a72d-489b-885d-c48b8a16cad7",
+    "athlete" : {
+      "name" : "Марія Бондаренко",
+      "weightKg" : 91.0
+    },
+    "date" : "2026-09-19",
+    "durationMinutes" : 56,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Станова тяга",
+      "sets" : 4,
+      "reps" : 12
+    } ],
+    "distanceKm" : 8.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "c0b208a9-435a-4e00-9c14-fbb1c9765b84",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-11-04",
+    "durationMinutes" : 68,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 5,
+      "reps" : 13
+    } ],
+    "liftedWeightKg" : 2838.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "a5630a52-5271-45f8-9c6d-ba7fbc202e63",
+    "athlete" : {
+      "name" : "Олександр Коваль",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-10-30",
+    "durationMinutes" : 68,
+    "intensity" : 5,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 4,
+      "reps" : 13
+    } ],
+    "useEquipment" : true
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "36b557a9-7583-4ad6-b035-20e115ab9f4a",
+    "athlete" : {
+      "name" : "Артем Олійник",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-10-19",
+    "durationMinutes" : 49,
+    "intensity" : 10,
+    "exercises" : [ {
+      "title" : "Жим гантелей",
+      "sets" : 3,
+      "reps" : 17
+    } ],
+    "distanceKm" : 13.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "9b218b96-7a38-413f-856d-1ff5ddd03efd",
+    "athlete" : {
+      "name" : "Максим Ткаченко",
+      "weightKg" : 63.0
+    },
+    "date" : "2026-10-02",
+    "durationMinutes" : 83,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Інтервальний біг",
+      "sets" : 4,
+      "reps" : 14
+    } ],
+    "liftedWeightKg" : 2596.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "fc1edfe5-10b3-48d5-803b-547c162c4425",
+    "athlete" : {
+      "name" : "Максим Ткаченко",
+      "weightKg" : 63.0
+    },
+    "date" : "2026-10-31",
+    "durationMinutes" : 31,
+    "intensity" : 7,
+    "exercises" : [ {
+      "title" : "Присідання зі штангою",
+      "sets" : 3,
+      "reps" : 15
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "c25234ee-7e3c-4751-b4b3-2390aed464b4",
+    "athlete" : {
+      "name" : "Артем Олійник",
+      "weightKg" : 73.0
+    },
+    "date" : "2026-11-05",
+    "durationMinutes" : 62,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Випади",
+      "sets" : 5,
+      "reps" : 12
+    } ],
+    "distanceKm" : 9.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "21cb7d03-a8b4-4ae4-897e-a7aa4cb87b83",
+    "athlete" : {
+      "name" : "Дмитро Шевченко",
+      "weightKg" : 71.0
+    },
+    "date" : "2026-10-08",
+    "durationMinutes" : 55,
+    "intensity" : 10,
+    "exercises" : [ {
+      "title" : "Станова тяга",
+      "sets" : 5,
+      "reps" : 15
+    } ],
+    "liftedWeightKg" : 1632.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "c60903f0-894d-4681-9a7d-57a408b4aec1",
+    "athlete" : {
+      "name" : "Анна Мельник",
+      "weightKg" : 82.0
+    },
+    "date" : "2026-10-27",
+    "durationMinutes" : 85,
+    "intensity" : 3,
+    "exercises" : [ {
+      "title" : "Станова тяга",
+      "sets" : 3,
+      "reps" : 13
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "9f634ca5-3b95-4e94-a318-5e8c2602bb59",
+    "athlete" : {
+      "name" : "Максим Ткаченко",
+      "weightKg" : 63.0
+    },
+    "date" : "2026-10-24",
+    "durationMinutes" : 110,
+    "intensity" : 2,
+    "exercises" : [ {
+      "title" : "Випади",
+      "sets" : 3,
+      "reps" : 10
+    } ],
+    "distanceKm" : 3.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "174fc7e2-7ef1-4e5c-9ab7-e09fa5b6630e",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-10-30",
+    "durationMinutes" : 75,
+    "intensity" : 9,
+    "exercises" : [ {
+      "title" : "Жим гантелей",
+      "sets" : 5,
+      "reps" : 10
+    } ],
+    "liftedWeightKg" : 2845.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "606be511-4ab2-4896-a56d-813664e87613",
+    "athlete" : {
+      "name" : "Максим Ткаченко",
+      "weightKg" : 63.0
+    },
+    "date" : "2026-09-27",
+    "durationMinutes" : 82,
+    "intensity" : 6,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 3,
+      "reps" : 10
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "ab2ede9b-c81b-4098-a466-d978ecead6ef",
+    "athlete" : {
+      "name" : "Максим Ткаченко",
+      "weightKg" : 63.0
+    },
+    "date" : "2026-10-15",
+    "durationMinutes" : 110,
+    "intensity" : 7,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 5,
+      "reps" : 10
+    } ],
+    "distanceKm" : 12.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "41a1a0e4-1155-415b-889d-a1de008f993b",
+    "athlete" : {
+      "name" : "Анна Мельник",
+      "weightKg" : 82.0
+    },
+    "date" : "2026-10-07",
+    "durationMinutes" : 82,
+    "intensity" : 4,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 5,
+      "reps" : 16
+    } ],
+    "liftedWeightKg" : 1841.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "456fd898-f9f7-4c71-b758-df35da89a109",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-10-22",
+    "durationMinutes" : 70,
+    "intensity" : 2,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 3,
+      "reps" : 16
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "4c75e112-f31a-4081-8a97-1b026db2780e",
+    "athlete" : {
+      "name" : "Максим Ткаченко",
+      "weightKg" : 63.0
+    },
+    "date" : "2026-09-27",
+    "durationMinutes" : 63,
+    "intensity" : 1,
+    "exercises" : [ {
+      "title" : "Інтервальний біг",
+      "sets" : 3,
+      "reps" : 11
+    } ],
+    "distanceKm" : 2.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "cc195218-8e33-46b0-a86a-d9f7aa837143",
+    "athlete" : {
+      "name" : "Анна Мельник",
+      "weightKg" : 82.0
+    },
+    "date" : "2026-09-19",
+    "durationMinutes" : 57,
+    "intensity" : 9,
+    "exercises" : [ {
+      "title" : "Жим гантелей",
+      "sets" : 3,
+      "reps" : 12
+    } ],
+    "liftedWeightKg" : 2869.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "ccd07a2a-70d5-4f56-9545-89b9bf8b98a7",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-10-16",
+    "durationMinutes" : 61,
+    "intensity" : 10,
+    "exercises" : [ {
+      "title" : "Присідання зі штангою",
+      "sets" : 5,
+      "reps" : 12
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "c289c0ea-a7d9-4f8e-9979-24a22137f64b",
+    "athlete" : {
+      "name" : "Максим Ткаченко",
+      "weightKg" : 63.0
+    },
+    "date" : "2026-10-06",
+    "durationMinutes" : 86,
+    "intensity" : 6,
+    "exercises" : [ {
+      "title" : "Інтервальний біг",
+      "sets" : 3,
+      "reps" : 10
+    } ],
+    "distanceKm" : 3.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "a780bc89-5620-4738-91fb-82f8c351d1ac",
+    "athlete" : {
+      "name" : "Ірина Кравченко",
+      "weightKg" : 83.0
+    },
+    "date" : "2026-10-02",
+    "durationMinutes" : 35,
+    "intensity" : 9,
+    "exercises" : [ {
+      "title" : "Жим гантелей",
+      "sets" : 5,
+      "reps" : 15
+    } ],
+    "liftedWeightKg" : 507.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "6e88e110-d2d1-40eb-b949-8d2d13c7cd2e",
+    "athlete" : {
+      "name" : "Анна Мельник",
+      "weightKg" : 82.0
+    },
+    "date" : "2026-11-12",
+    "durationMinutes" : 78,
+    "intensity" : 6,
+    "exercises" : [ {
+      "title" : "Планка",
+      "sets" : 3,
+      "reps" : 17
+    } ],
+    "useEquipment" : false
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "8636471c-efe9-431e-b9bc-bc9ddd7d1e5a",
+    "athlete" : {
+      "name" : "Дмитро Шевченко",
+      "weightKg" : 71.0
+    },
+    "date" : "2026-09-17",
+    "durationMinutes" : 28,
+    "intensity" : 5,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 3,
+      "reps" : 12
+    } ],
+    "distanceKm" : 9.0
+  }, {
+    "workoutType" : "STRENGTH",
+    "id" : "82f22f2a-b23d-4448-ba3d-74eaea9a4668",
+    "athlete" : {
+      "name" : "Дмитро Шевченко",
+      "weightKg" : 71.0
+    },
+    "date" : "2026-10-08",
+    "durationMinutes" : 36,
+    "intensity" : 5,
+    "exercises" : [ {
+      "title" : "Інтервальний біг",
+      "sets" : 3,
+      "reps" : 13
+    } ],
+    "liftedWeightKg" : 2426.0
+  }, {
+    "workoutType" : "STRETCHING",
+    "id" : "0fd99a6c-8958-4c3e-ad4d-9a6873426281",
+    "athlete" : {
+      "name" : "Максим Ткаченко",
+      "weightKg" : 63.0
+    },
+    "date" : "2026-10-06",
+    "durationMinutes" : 25,
+    "intensity" : 9,
+    "exercises" : [ {
+      "title" : "Інтервальний біг",
+      "sets" : 3,
+      "reps" : 14
+    } ],
+    "useEquipment" : false
+  } ]
+}

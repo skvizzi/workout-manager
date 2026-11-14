@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.workout.controller.MainController">
+    <top>
+        <VBox spacing="8">
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+            <HBox spacing="8" alignment="CENTER_LEFT">
+                <TextField fx:id="searchField" promptText="Пошук за спортсменом..." prefWidth="190"/>
+                <ComboBox fx:id="typeFilterBox" prefWidth="120"/>
+                <DatePicker fx:id="filterFromPicker" promptText="Період з" prefWidth="130"/>
+                <DatePicker fx:id="filterToPicker" promptText="Період по" prefWidth="130"/>
+                <Button text="Скинути" onAction="#onResetFilters"/>
+                <Separator orientation="VERTICAL"/>
+                <Button text="Імпорт JSON" onAction="#onImportJson"/>
+                <Button text="Експорт JSON" onAction="#onExportJson"/>
+                <Button text="10 000 записів" onAction="#onGenerate10k"/>
+                <Button text="Розрахунок T1/Tn + XML" onAction="#onBenchmarkAndXmlReport"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="workoutTable">
+            <columns>
+                <TableColumn fx:id="colAthlete" text="Спортсмен" prefWidth="170"/>
+                <TableColumn fx:id="colType" text="Тип" prefWidth="100"/>
+                <TableColumn fx:id="colDate" text="Дата" prefWidth="105"/>
+                <TableColumn fx:id="colDuration" text="Тривалість (хв)" prefWidth="120"/>
+                <TableColumn fx:id="colIntensity" text="Інтенсивність" prefWidth="105"/>
+                <TableColumn fx:id="colCalories" text="Калорії" prefWidth="95"/>
+                <TableColumn fx:id="colExercises" text="Вправи" prefWidth="180"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <right>
+        <VBox spacing="7" prefWidth="270">
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+            <Label text="Керування тренуванням" style="-fx-font-weight: bold;"/>
+            <ComboBox fx:id="athleteBox" maxWidth="Infinity" promptText="Спортсмен"/>
+            <ComboBox fx:id="workoutTypeBox" maxWidth="Infinity"/>
+            <DatePicker fx:id="datePicker" maxWidth="Infinity"/>
+            <TextField fx:id="durationField" promptText="Тривалість (1-600 хв)"/>
+            <TextField fx:id="intensityField" promptText="Інтенсивність (1-10)"/>
+            <TextField fx:id="extraParamField" promptText="Км / Тоннаж кг / 1 або 0"/>
+            <TextField fx:id="exerciseTitleField" promptText="Вправа (напр. Жим лежачи)"/>
+            <HBox spacing="6">
+                <Button text="Додати" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#onAddWorkout"/>
+                <Button text="Оновити обране" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#onUpdateWorkout"/>
+            </HBox>
+            <Button text="Видалити тренування" maxWidth="Infinity" onAction="#onDeleteWorkout"/>
+
+            <Separator/>
+            <Label text="Керування спортсменами" style="-fx-font-weight: bold;"/>
+            <TextField fx:id="newAthleteNameField" promptText="Ім'я та прізвище"/>
+            <TextField fx:id="newAthleteWeightField" promptText="Вага (25-250 кг)"/>
+            <HBox spacing="6">
+                <Button text="Додати" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#onAddAthlete"/>
+                <Button text="Оновити" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#onUpdateAthlete"/>
+            </HBox>
+            <Button text="Видалити спортсмена" maxWidth="Infinity" onAction="#onDeleteAthlete"/>
+        </VBox>
+    </right>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <padding><Insets top="6" right="10" bottom="6" left="10"/></padding>
+            <ProgressBar fx:id="progressBar" prefWidth="220" progress="0"/>
+            <Label fx:id="statusLabel" text="Готово"/>
+        </HBox>
+    </bottom>
+</BorderPane>
