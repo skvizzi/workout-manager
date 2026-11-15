@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.workout.model.Athlete;
 import com.workout.model.Workout;
 
 import java.io.File;
@@ -11,6 +12,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.logging.Logger;
 
 // Читання та збереження набору тренувань у форматі JSON через Jackson
@@ -39,7 +43,8 @@ public class JsonStorage {
         LOG.info("Збережено у JSON: " + target + ", тренувань: " + data.getWorkouts().size());
     }
 
-    // ШІ: Claude Code (Claude Opus) – зрозуміле повідомлення про синтаксичну помилку і перевірка кожного запису.
+    // ШІ: Claude Code (Claude Opus) – зрозуміле повідомлення про синтаксичну помилку, перевірка кожного запису
+    // і прив'язка тренувань до об'єктів Athlete зі списку спортсменів після читання.
     // Змінено: адаптовано під модель Workout, перевірено обробку винятків та логування.
     public StorageData load(File file) throws IOException {
         if (file == null || !file.exists() || file.length() == 0) {
@@ -60,7 +65,30 @@ public class JsonStorage {
                 throw new IOException("У файлі є тренування без спортсмена або дати");
             }
         }
+        linkWorkoutsToAthletes(data);
         LOG.info("Прочитано з JSON: " + file.getName() + ", тренувань: " + data.getWorkouts().size());
         return data;
+    }
+
+    // ШІ: Claude Code (Claude Opus) – заміна копій спортсменів у тренуваннях на об'єкти зі списку athletes.
+    // Змінено: адаптовано під модель Workout, перевірено обробку винятків та логування.
+    private void linkWorkoutsToAthletes(StorageData data) {
+        Map<String, Athlete> athletesByName = new LinkedHashMap<>();
+        for (Athlete athlete : data.getAthletes()) {
+            if (athlete != null) {
+                athletesByName.putIfAbsent(athlete.getName().toLowerCase(), athlete);
+            }
+        }
+        for (Workout workout : data.getWorkouts()) {
+            String key = workout.getAthlete().getName().toLowerCase();
+            Athlete athlete = athletesByName.get(key);
+            if (athlete == null) {
+                athlete = workout.getAthlete();
+                athletesByName.put(key, athlete);
+                LOG.info("Спортсмена " + athlete.getName() + " додано до списку з тренувань файлу");
+            }
+            workout.setAthlete(athlete);
+        }
+        data.setAthletes(new ArrayList<>(athletesByName.values()));
     }
 }

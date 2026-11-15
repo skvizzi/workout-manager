@@ -53,6 +53,8 @@
 
 Поле `workoutType` (`CARDIO`, `STRENGTH`, `STRETCHING`) визначає клас під час читання (`@JsonTypeInfo`, `@JsonSubTypes`).
 
+Кожне тренування зберігає в JSON власну копію спортсмена. Після читання `JsonStorage.linkWorkoutsToAthletes()` замінює ці копії об'єктами зі списку `athletes` (порівняння імені без урахування регістру), а відсутніх спортсменів додає до списку. Тому перейменування і видалення спортсмена після перезапуску застосунку змінює всі його тренування.
+
 **Структура XML** (`weekly_load_report.xml`):
 
 ```xml
@@ -207,6 +209,7 @@ package com.workout.repository {
     -mapper : ObjectMapper
     +save(file : File, data : StorageData) : void
     +load(file : File) : StorageData
+    -linkWorkoutsToAthletes(data : StorageData) : void
   }
 
   class XmlReportExporter {
@@ -421,6 +424,7 @@ classDiagram
         -ObjectMapper mapper
         +save(File file, StorageData data) void
         +load(File file) StorageData
+        -linkWorkoutsToAthletes(StorageData data) void
     }
 
     class XmlReportExporter {
