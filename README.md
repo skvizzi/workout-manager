@@ -27,6 +27,20 @@ mvn javafx:run
 Кнопка «10 000 записів» генерує великий набір у фоновому потоці, кнопка
 «Розрахунок T1/Tn + XML» вимірює час розрахунку і зберігає `weekly_load_report.xml`.
 
+## Тестові файли з пошкодженими даними (`data/`)
+
+Тека `data/` містить три файли для перевірки обробки помилок під час імпорту
+(кнопка «Імпорт JSON», метод `JsonStorage.load()`). Жоден з них не змінює поточних даних:
+імпорт завершується повідомленням про помилку, а записи в таблицях залишаються попередніми.
+
+| Файл | Що пошкоджено | Що відбувається |
+|---|---|---|
+| `broken_syntax.json` | обірваний JSON: немає `]` і `}` у кінці | Jackson кидає `JsonProcessingException`, `load()` перетворює його на `IOException` «Файл не відповідає формату JSON застосунку: Unexpected end-of-input…» |
+| `invalid_values.json` | синтаксис правильний, але `intensity` = 25, `durationMinutes` = -10 | сеттер `Workout.setIntensity()` кидає `IllegalArgumentException`, Jackson обгортає його в `JsonMappingException`, повідомлення: «…Інтенсивність має бути від 1 до 10» |
+| `missing_athlete.json` | у тренуванні немає поля `athlete` | перевірка в `load()` дає `IOException` «У файлі є тренування без спортсмена або дати» |
+
+Кожна помилка також пишеться в журнал (`LOG.warning` для синтаксису і значень).
+
 ## Структура
 
 ```
@@ -38,6 +52,7 @@ src/main/java/com/workout/
   repository/                   JsonStorage, StorageData, XmlReportExporter
   controller/                   MainController
 src/main/resources/com/workout/main-view.fxml
+data/                           тестові файли з пошкодженими даними
 ```
 
 Специфікація, UML-діаграма класів і блок-схеми – у `DESIGN.md`,

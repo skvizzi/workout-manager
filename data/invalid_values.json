@@ -1,0 +1,35 @@
+{
+  "athletes" : [ {
+    "name" : "Марія Бондаренко",
+    "weightKg" : 61.0
+  } ],
+  "workouts" : [ {
+    "workoutType" : "STRENGTH",
+    "id" : "b1a7c3e2-0000-4000-8000-000000000002",
+    "athlete" : {
+      "name" : "Марія Бондаренко",
+      "weightKg" : 61.0
+    },
+    "date" : "2026-10-05",
+    "durationMinutes" : 60,
+    "intensity" : 25,
+    "exercises" : [ {
+      "title" : "Жим лежачи",
+      "sets" : 4,
+      "reps" : 8
+    } ],
+    "liftedWeightKg" : 1200.0
+  }, {
+    "workoutType" : "CARDIO",
+    "id" : "b1a7c3e2-0000-4000-8000-000000000003",
+    "athlete" : {
+      "name" : "Марія Бондаренко",
+      "weightKg" : 61.0
+    },
+    "date" : "2026-10-06",
+    "durationMinutes" : -10,
+    "intensity" : 5,
+    "exercises" : [ ],
+    "distanceKm" : 3.0
+  } ]
+}

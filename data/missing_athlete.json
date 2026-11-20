@@ -1,0 +1,18 @@
+{
+  "athletes" : [ {
+    "name" : "Дмитро Шевченко",
+    "weightKg" : 71.0
+  } ],
+  "workouts" : [ {
+    "workoutType" : "STRETCHING",
+    "id" : "b1a7c3e2-0000-4000-8000-000000000004",
+    "date" : "2026-10-08",
+    "durationMinutes" : 30,
+    "intensity" : 3,
+    "exercises" : [ {
+      "title" : "Розтяжка спини",
+      "sets" : 2,
+      "reps" : 10
+    } ]
+  } ]
+}
